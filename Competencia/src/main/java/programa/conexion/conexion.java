@@ -21,10 +21,10 @@ public class conexion {
             String url = "jdbc:sqlserver://localhost:1433;databaseName=CompetenciaTirosAlAro;TrustServerCertificate=True;";
             //String url = "jdbc:sqlserver://localhost:1433;databaseName=mysql;TrustServerCertificate=True;";
             conexion = DriverManager.getConnection(url, "sa", "12345678");
-            // Paso 3: Crear una sentencia: 
+            /* Paso 3: Crear una sentencia: 
             sentencia = conexion.createStatement();
             
-            /* Paso 4: Ejecutar una consulta:
+            Paso 4: Ejecutar una consulta:
             String consulta = "select * from Participantes";
             ResultSet resultado = sentencia.executeQuery(consulta);
 
