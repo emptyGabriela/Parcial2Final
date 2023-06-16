@@ -15,6 +15,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
      */
     public InterfazPrincipal() {
         initComponents();
+        jLabel1.setIcon(new javax.swing.ImageIcon("BASKET.png"));
     }
 
     /**
@@ -26,22 +27,75 @@ public class InterfazPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        btnAgregar = new javax.swing.JButton();
+        btnEfectividad = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnConsultar = new javax.swing.JButton();
+        btnModificar1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel3.setFont(new java.awt.Font("Strawberry Bubblegum", 1, 27)); // NOI18N
+        jLabel3.setText("Opciones disponibles:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 0, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Serif", 1, 33)); // NOI18N
+        jLabel2.setText("Competencia de lanzamientos");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+
+        btnAgregar.setBackground(new java.awt.Color(153, 153, 153));
+        btnAgregar.setFont(new java.awt.Font("SimSun", 0, 16)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(204, 204, 204));
+        btnAgregar.setText("Agregar registro");
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 180, -1));
+
+        btnEfectividad.setBackground(new java.awt.Color(153, 153, 153));
+        btnEfectividad.setFont(new java.awt.Font("SimSun", 0, 16)); // NOI18N
+        btnEfectividad.setForeground(new java.awt.Color(204, 204, 204));
+        btnEfectividad.setText("Efectividad de participantes");
+        getContentPane().add(btnEfectividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 260, -1));
+
+        btnEliminar.setBackground(new java.awt.Color(153, 153, 153));
+        btnEliminar.setFont(new java.awt.Font("SimSun", 0, 16)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(204, 204, 204));
+        btnEliminar.setText("Eliminar registro");
+        getContentPane().add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 180, -1));
+
+        btnConsultar.setBackground(new java.awt.Color(153, 153, 153));
+        btnConsultar.setFont(new java.awt.Font("SimSun", 0, 16)); // NOI18N
+        btnConsultar.setForeground(new java.awt.Color(204, 204, 204));
+        btnConsultar.setText("Consultar registro");
+        getContentPane().add(btnConsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 180, -1));
+
+        btnModificar1.setBackground(new java.awt.Color(153, 153, 153));
+        btnModificar1.setFont(new java.awt.Font("SimSun", 0, 16)); // NOI18N
+        btnModificar1.setForeground(new java.awt.Color(204, 204, 204));
+        btnModificar1.setText("Modificar registro");
+        getContentPane().add(btnModificar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 180, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/programa/BASKET.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
+        
+    }//GEN-LAST:event_btnAgregarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,10 +128,20 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new InterfazPrincipal().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JButton btnConsultar;
+    private javax.swing.JButton btnEfectividad;
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnModificar1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
